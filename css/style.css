@@ -1,0 +1,1349 @@
+/*body*/
+* {
+    outline: none !important;
+    scroll-behavior: smooth;
+  }
+  
+body{
+    font-family: "Poppins", sans-serif;
+}
+/*----------header---------------*/
+
+
+header {
+    position: relative;
+    z-index: 9;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  .navbar {
+    
+    background: transparent !important;
+    transition: 0.5s;
+  }
+  
+  .scrolled {
+    background: rgba(0, 0, 0, 0.75) !important;
+    transition: 0.5s;
+  }
+
+  .navbar .container .navbar-toggler {
+    background-color: #00CC99;
+}
+  .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: #000;
+    background: #fff;
+  }
+  
+  .navbar-light .navbar-nav .active > .nav-link:hover {
+    color: #000;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: #00CCCC;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link:focus {
+    color: white;
+  }
+  
+  .navbar-light .navbar-brand,
+  .navbar-light .navbar-brand:hover,
+  .navbar-light .navbar-brand:focus,
+  .navbar-light .navbar-brand:visited {
+    color: #00CCCC;
+    font-size:3rem;
+    font-weight: 600;
+  }
+/*-----------header-------------*/
+
+
+
+/*-----------Banner-------------*/
+.banner {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(../image/50.jpg);
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+.banner::before, .sec2::before, .contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(#000, transparent);
+  pointer-events: none;
+}
+
+.banner::after, .sec2::after, .contact::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(360deg, #000, transparent);
+  pointer-events: none;
+}
+
+.height100p {
+  height: 100vh;
+}
+
+.contentBox {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+}
+.contentBox div{
+  width: 30%;
+  float: right;
+}
+.contentBox div h1{
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+.contentBox div p{
+  font-size: 15px;
+  color: white;
+  opacity: 0.8;
+  margin-left: 20px;
+}
+.contentBox div .btn{
+  margin-left: 15px;
+  background: #00CCCC;
+  color: white;
+}
+/*-----------Banner-------------*/
+
+
+
+/*------------About-------------*/
+.About {
+  padding: 100px 0;
+  background: #fff;
+}
+.About .headerText {
+  color: #000;
+}
+.About .headerText h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+/*------------About-------------*/
+
+
+
+/*----------Professional-skill---------*/
+.Professional-skill{
+  width: 100%;
+  height: 100vh;
+  background: url(../image/23.jpg);
+  background-size: cover;
+  margin-bottom: 0;
+}
+.Professional-skill .container{
+  padding-top: 300px;
+  margin-bottom: -130px;
+}
+.Professional-skill .container h3{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.skills-bar p{
+  margin-bottom: 6px;
+  color: white;
+  font-size: 15px;
+}
+.progress{
+  border-radius: 16px !important;
+  margin-bottom: 10px;
+}
+.progress-bar{
+  border-radius: 16px;
+  background: #00CCCC !important;
+}
+/*----------Professional-skill---------*/
+
+
+
+/*---------------Process-----------*/
+
+.Process .container-fluid .Project-Completed{
+  height: 33.3vh;
+}
+.Process .container-fluid .Project-Completed{
+  background: #00CC99;
+  padding-left: 5%;
+}
+.Process .container-fluid .Project-Completed .col-3{
+  position: relative;
+}
+.Process .container-fluid .Project-Completed .col-3 .wokking{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ width: 70%;
+  overflow: hidden;
+}
+.Process .container-fluid .Project-Completed .col-3 .wokking .icon{
+  width: 20%;
+  float: left;
+  
+}
+.Process .container-fluid .Project-Completed .col-3 .wokking .icon i{
+ font-size: 40px;
+ color: white;
+padding-right: 10px;
+padding-top: 5px;
+}
+.Process .container-fluid .Project-Completed .col-3 .wokking .text{
+  width: 80%;
+  float: right;
+}
+.Process .container-fluid .Project-Completed .col-3 .wokking .text p{
+  padding: 0;
+  margin: 0;
+  color: white;
+  
+}
+.Process .container-fluid .box{
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  list-style: none;
+}
+.Process .container-fluid .box img{
+width: 100%;
+}
+.Process .container-fluid .snake{
+  position: relative;
+  overflow: hidden;
+}
+.Process .container-fluid .snake .overlay{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.Process .container-fluid .snake .overlay p{
+  position: absolute;
+  font-family: sans-serif;
+  line-height: 2em;
+  left: -150%;
+  top: 50%;
+  transition: .3s;
+}
+.Process .container-fluid .snake .overlay p i{
+  font-size: 35px;
+  color: white;
+  text-align: center;
+}
+.Process .container-fluid .snake .overlay:hover p{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+/*---------------Process-----------*/
+
+
+/*----------More-work----------*/
+.More-work .container-fluid .load-more .col-12{
+  background: #DCDCDC;
+  height: 15vh;
+}
+.More-work .container-fluid .load-more p{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+  color: #555555;
+}
+.More-work .container-fluid .our-work .col-6{
+  margin: 0 auto;
+
+}
+.More-work .container-fluid .our-work .col-6 h3{
+  text-align: center;
+  padding: 50px 0 20px 0;
+  color: black;
+  font-weight: bold;
+}
+.More-work .container-fluid .our-work .col-6 p{
+  text-align: center;
+  padding: 10px 0 20px 0;
+  color: #555555;
+}
+.More-work .container-fluid .image .col-11{ 
+  height: 80vh;
+  background: url(../image/50.jpg);
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.More-work .container-fluid .image .col-11 .outdio{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+  width: 80px;
+  height: 80px;
+  opacity: 0.8;
+  background:#00CCCC;
+  border-radius: 50px;
+  border: none;
+}
+.More-work .container-fluid .image .col-11 .outdio i{
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+  color: white;
+}
+/*----------More-work----------*/
+
+
+
+/*--------About-me-----------------*/
+.About-me .container-fluid{
+  background-color: #EEEEEE;
+  padding: 100px 0 100px 0;
+}
+.About-me .container-fluid .row{
+  width: 90%;
+  margin: 0 auto;
+}
+.About-me .container-fluid .row .col-3{
+  text-align: center;
+}
+.About-me .container-fluid .row .col-3 i{
+  font-size: 50px;
+  padding: 20px;
+  color: #777777;
+}
+
+.About-me .container-fluid .row .col-3 p{
+  font-size: 15px;
+  color: #777777;
+}
+/*--------About-me-----------------*/
+
+
+/*-------hover-element----------*/
+.hover-element{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+.hover-element .quote{
+  width: 1200px;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+}
+.hover-element .quote .box{
+  position: relative;
+  width: 360px;
+  height: 400px;
+  background: #fff;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 30px;
+  box-shadow: -10px 25px 50px rgba(0,0,0,.2);
+}
+.hover-element .quote .box:hover{
+  box-shadow: -10px 50px 100px rgba(0,0,0,.5);
+}
+ .hover-element .quote .box p{
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+.hover-element .quote .box:hover p
+{
+  color: #fff;
+}
+.hover-element .quote .box h2{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+.hover-element .quote .box:hover h2
+{
+  color: #fff;
+}
+.hover-element .quote .bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1;
+  transition: 0.5s;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  
+}
+.hover-element .quote .box.box1:hover ~ .bg,
+.hover-element .quote .box.box1:hover{
+  
+  opacity: 1;
+  background: linear-gradient(#03A9F4,#E91E63);
+
+}
+.hover-element .quote .box.box2:hover ~ .bg,
+.hover-element .quote .box.box2:hover{
+  opacity: 1;
+  background: linear-gradient(#FFC107,#19fd36);
+
+}
+.hover-element .quote .box.box3:hover ~ .bg,
+.hover-element .quote .box.box3:hover{
+  opacity: 1;
+  background: linear-gradient(#FFC107,#E91E63);
+
+}
+.hover-element .quote .box::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,.2);
+  pointer-events: none;
+}
+.hover-element .quote .box::after{
+  content: url();
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  opacity: .1;
+  background: rgba(255,255,255,.2);
+  pointer-events: none;
+  filter: invert(1);
+}
+.hover-element .quote .box:hover::after
+{
+  filter: invert(0);
+}
+/*-------hover-element----------*/
+
+
+/*-------HaneMade-------*/
+.hanmade .container-fluid{
+  margin: 0 ;
+  padding: 0;
+}
+.hanmade .container-fluid .row{
+ width: 100%;
+ margin-left: 0;
+ background: #03A9F4;
+ padding-left: 16%;
+}
+.hanmade .container-fluid .row .col-2 img{
+  width: 100%;
+  padding: 30px;
+
+}
+/*-------HaneMade-------*/
+
+
+/*------Contact---------*/
+.contact{
+  width: 100%;
+  height: 100vh;
+  background: #DDDDDD;;
+  padding-top: 7%;
+}
+.contact .container-fluid .row{
+  width: 60%;
+  margin: 0 auto;
+}
+.contact .container-fluid .row .col-12{
+  text-align: center;
+}
+.contact .container-fluid .row .col-12 h2{
+  color: black;
+  padding: 20px;
+  font-weight: bold;
+}
+.contact .container-fluid .row .col-12 p{
+  color: #777777;
+}
+/*------Contact---------*/
+
+/*------Contact2----------*/
+.contact2{
+  padding-top: 50px;
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../image/50.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+.contact2 .row{
+  padding: 30px 0;
+  font-size: 22px;
+}
+.contact2 .col-md-4 .fa{
+  padding: 10px;
+  font-size: 40px;
+}
+.contact2 .btn{
+  padding: 10px 25px 10px 25px;
+  margin: 5px;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  background: transparent;
+}
+.contact2 .btn:focus{
+  box-shadow: none !important;
+}
+.contact2 .btn:hover{
+  border: 2px solid #00CCCC !important;
+  background: #000 !important;
+  transition: .6s;
+}
+.contact2 .btn .fa{
+  margin-right: 10px;
+}
+.footer{
+  background: #000;
+  height: 50px;
+  margin-top: 50px;
+  color: #fff;
+  padding-top: 10px;
+}
+.fa-heart-o{
+  color: red;
+}
+/*-----contact2----------*/
+
+/*--------reponsive----------*/
+
+
+@media screen and (max-width:1255px){ 
+  /*header*/
+  .navbar-light .navbar-brand, .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:visited {
+    color: #00CCCC;
+    font-size: 2.5rem;
+  }
+  nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: .5rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  .navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .navbar-toggler {
+    padding: 0.2rem .50rem;
+    font-size: 0.2rem;
+    line-height: 0.7;
+  }
+  /*header*/
+  /*Process*/
+    .Process .container-fluid .Project-Completed .col-3 .wokking .icon{
+      width: 20%;
+      float: left;
+      
+    }
+    .Process .container-fluid .Project-Completed .col-3 .wokking .icon i{
+    font-size: 35px;
+    color: white;
+    padding-right: 50px;
+    display: inline-block;
+    }
+    .Process .container-fluid .Project-Completed .col-3 .wokking .text{
+      width: 80%;
+      float: right;
+    }
+    .Process .container-fluid .Project-Completed .col-3 .wokking .text p{
+      font-size: 15px;
+    }
+   /*Process*/
+}
+@media screen and (max-width:1190px){ 
+  /*header*/
+    .navbar-light .navbar-brand, .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:visited {
+      color: #00CCCC;
+      font-size: 2rem;
+    }
+    nav .nav-link {
+      padding-right: 0.4rem;
+      padding-left: .4rem;
+    }
+    body {
+      font-size: 1rem;
+    }
+    .navbar-toggler-icon {
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .navbar-toggler {
+      padding: 0.2rem .50rem;
+      font-size: 0.2rem;
+      line-height: 0.7;
+    }
+  /*header*/
+  /*Banner*/
+    .contentBox div{
+      width: 40%;
+      float: right;
+    }
+   /*Banner*/
+    
+   /*Process*/
+    .Process .container-fluid .Project-Completed{
+      height: 30vh;
+      }
+      .Process .container-fluid .Project-Completed .col-3 .wokking .icon i{
+      font-size: 30px;
+      color: white;
+      padding-right: 50px;
+      display: inline-block;
+      }
+      .Process .container-fluid .Project-Completed .col-3 .wokking .text{
+        width: 80%;
+        float: right;
+      }
+      .Process .container-fluid .Project-Completed .col-3 .wokking .text p{
+        font-size: 13px;
+      }
+    /*Process*/
+
+    /*Hover-element*/
+    .hover-element{
+      min-height: 80vh;
+    }
+    .hover-element .quote{
+      width: 1100px;
+      min-height: 400px;
+    }
+    .hover-element .quote .box{
+      width: 340px;
+      height: 380px;
+    }
+    .hover-element .quote .box p{
+      font-size: 17px;
+    }
+    .hover-element .quote .box h2{
+      font-size: 18px;
+    }
+    /*Hover-element*/
+}
+@media screen and (max-width:1100px){
+  /*header*/
+  .navbar-light .navbar-brand, .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:visited {
+    color: #00CCCC;
+    font-size: 2rem;
+  }
+  nav .nav-link {
+    padding-right: 0.4rem;
+    padding-left: .4rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  .navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .navbar-toggler {
+    padding: 0.2rem .50rem;
+    font-size: 0.2rem;
+    line-height: 0.7;
+  }
+/*header*/
+  /*Hover-element*/
+  .hover-element{
+    min-height: 70vh;
+  }
+  .hover-element .quote{
+    width: 900px;
+  }
+  .hover-element .quote .box{
+    width: 260px;
+    height: 320px;
+  }
+  .hover-element .quote .box p{
+    font-size: 15px;
+  }
+  .hover-element .quote .box h2{
+    font-size: 17px;
+  }
+/*Hover-element*/
+ }
+@media screen and (max-width:1000px){ 
+  /*header*/
+  .navbar-light .navbar-brand, .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:visited {
+    color: #00CCCC;
+    font-size: 1.8rem;
+  }
+  .nav-link {
+    display: block;
+    padding: 0.2rem .1rem;
+}
+  body {
+    font-size: .8rem;
+  }
+  .navbar-toggler-icon {
+    width: 3em;
+    height: 3em;
+  }
+  .navbar-toggler {
+    padding: 0.2rem .50rem;
+    font-size: 0.2rem;
+    line-height: 0.7;
+  }
+/*header*/
+  /*header*/
+  /*Banner*/
+    .contentBox div{
+      width: 50%;
+      float: right;
+    }
+    .contentBox div h1{
+      font-size: 25px;
+    }
+    .contentBox div p{
+      font-size: 14px;
+      color: white;
+      opacity: 1;
+      margin-left: 20px;
+    }
+    .contentBox div .btn{
+      font-size: 12px;
+      padding: 5px;
+    }
+ /*Banner*/
+
+  /*About*/
+    .About {
+      padding: 40px;
+      background: #fff;
+    }
+    .About .headerText {
+      color: #000;
+    }
+    .About .headerText h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .About .headerText p{
+      font-size: 15px;
+    }
+  /*About*/
+
+  /*professional Sill*/
+    .Professional-skill .container h3{
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .skills-bar p{
+      margin-bottom: 6px;
+      color: white;
+      font-size: 10px;
+    }
+    .progress{
+      border-radius: 16px !important;
+      margin-bottom: 10px;
+      height: 10px;
+    }
+  /*professional Sill*/
+
+  /*Process*/
+    .Process .container-fluid .Project-Completed{
+      height: 25vh;
+      }
+      .Process .container-fluid .Project-Completed .col-3 .wokking .icon i{
+      font-size: 27px;
+      }
+      .Process .container-fluid .Project-Completed .col-3 .wokking .text p{
+        font-size: 12px;
+      }
+  /*Process*/
+  /*More-work*/
+    .More-work .container-fluid .our-work{
+      height: 30vh;
+    }
+    .More-work .container-fluid .our-work .col-6 h3{
+      font-size: 20px;
+    }
+    .More-work .container-fluid .our-work .col-6 p{
+      font-size: 13px;
+    }
+    .More-work .container-fluid .image .col-11{ 
+      height: 60vh;
+    }
+    .More-work .container-fluid .image .col-11 .outdio{
+      width: 60px;
+      height: 60px;
+    }
+    .More-work .container-fluid .image .col-11 .outdio i{
+      font-size: 30px;
+    }
+  /*More-work*/
+  /*About me*/
+    .About-me .container-fluid{
+      background-color: #EEEEEE;
+      padding: 50px 0 50px 0;
+    }
+    .About-me .container-fluid .row .col-3 i{
+      font-size: 40px;
+      padding: 15px;
+      color: #777777;
+    }
+    
+    .About-me .container-fluid .row .col-3 p{
+      font-size: 10px;
+      color: #777777;
+    }
+  /*About me*/
+  /*Hover-element*/
+      .hover-element{
+        min-height: 65vh;
+      }
+      .hover-element .quote{
+        width: 800px;
+      }
+      .hover-element .quote .box{
+        width: 230px;
+        height: 320px;
+      }
+      .hover-element .quote .box p{
+        font-size: 13px;
+      }
+      .hover-element .quote .box h2{
+        font-size: 15px;
+      }
+  /*Hover-element*/
+
+  /*Contact*/
+    .contact{
+      width: 100%;
+      height: 80vh;
+      background: #DDDDDD;;
+      padding-top: 5%;
+    }
+    .contact .container-fluid .row{
+      width: 60%;
+      margin: 0 auto;
+    }
+    .contact .container-fluid .row .col-12 h2{
+      padding: 15px;
+      font-size: 25px;
+    }
+    .contact .container-fluid .row .col-12 p{
+      color: #777777;
+      font-size: 14px;
+    }
+    .contact .container-fluid .row .form-control,.btn{
+      font-size: 10px;
+    }
+    .contact .container-fluid .row .btn{
+      font-size: 8px;
+    }
+  /*Contact*/
+
+  /*Contact2*/
+    .contact2{
+      padding-top: 20px;
+    }
+    .contact2 .container h1{
+      font-size: 30px;
+    }
+    .contact2 .col-md-4 .fa{
+      padding: 8px;
+      font-size: 25px;
+    }
+    .contact2 .col-md-4 p{
+      font-size: 12px;
+    }
+    .contact2 .btn{
+      padding: 8px 20px 8px 20px;
+      margin: 3px;
+      border-radius: 20px;
+    }
+    .contact2 .btn .fa{
+      margin-right: 10px;
+    }
+    .footer{
+      background: #000;
+      height: 30px;
+      margin-top: 20px;
+      color: #fff;
+      padding-top: 8px;
+    }
+   /*Contact2*/
+}
+
+@media screen and (max-width:700px){ 
+  /*header*/
+  .navbar-light .navbar-brand, .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:visited {
+    color: #00CCCC;
+    font-size:1.2rem;
+  }
+  .nav-link {
+    display: block;
+    padding: 0rem .1rem;
+}
+  body {
+    font-size: .6rem;
+  }
+  .navbar-toggler-icon {
+    width: 2em;
+    height: 2em;
+  }
+  .navbar-toggler {
+    padding: 0.2rem .50rem;
+    font-size: 0.2rem;
+    line-height: 0.7;
+  }
+/*header*/
+  /*Banner*/
+    .contentBox div{
+      width: 60%;
+      float: right;
+    }
+    .contentBox div h1{
+      font-size: 15px;
+    }
+    .contentBox div p{
+      font-size: 10px;
+    }
+    .contentBox div .btn{
+      font-size: 8px;
+      padding: 5px;
+    }
+ /*Banner*/
+
+  /*About*/
+    .About {
+      padding: 30px;
+    }
+    .About .headerText {
+      color: #000;
+    }
+    .About .headerText h2 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    .About .headerText p{
+      font-size: 9px;
+    }
+  /*About*/
+
+  /*professional Sill*/
+    .Professional-skill .container h3{
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    .skills-bar p{
+      font-size: 8px;
+    }
+    .progress{
+      border-radius: 16px !important;
+      margin-bottom: 10px;
+      height: 7px;
+    }
+    .progress-bar{
+      font-size: 6px;
+     padding-top: 2px;
+    }
+  /*professional Sill*/
+
+  /*Process*/
+    .Process .container-fluid .Project-Completed{
+      height: 17vh;
+      }
+      .Process .container-fluid .Project-Completed .col-3 .wokking .icon i{
+      font-size: 19px;
+      }
+      .Process .container-fluid .Project-Completed .col-3 .wokking .text p{
+        font-size: 9px;
+      }
+  /*Process*/
+  /*More-work*/
+  .More-work .container-fluid .load-more .col-12{
+    height: 13vh;
+  }
+  .More-work .container-fluid .load-more p{
+   font-size: 10px;
+   padding-top: 0px;
+   
+  }
+    .More-work .container-fluid .our-work{
+      height: 22vh;
+    }
+    .More-work .container-fluid .our-work .col-6 h3{
+      font-size: 17px;
+      padding-bottom: 2px;
+    }
+    .More-work .container-fluid .our-work .col-6 p{
+      font-size: 8px;
+    }
+    .More-work .container-fluid .image .col-11{ 
+      height: 45vh;
+    }
+    .More-work .container-fluid .image .col-11 .outdio{
+      width: 40px;
+      height: 40px;
+    }
+    .More-work .container-fluid .image .col-11 .outdio i{
+      font-size: 20px;
+    }
+  /*More-work*/
+  /*About me*/
+    .About-me .container-fluid{
+      padding: 30px 0 30px 0;
+    }
+    .About-me .container-fluid .row .col-3 i{
+      font-size: 25px;
+      padding: 10px;
+    }
+    .About-me .container-fluid .row .col-3 h6{
+      font-size: 10px;
+    }
+    .About-me .container-fluid .row .col-3 p{
+      font-size: 8px;
+      color: #777777;
+    }
+  /*About me*/
+  /*Hover-element*/
+      .hover-element{
+        min-height: 50vh;
+        padding-top: 30px;
+      }
+      .hover-element .quote{
+        width: 650px;
+      }
+      .hover-element .quote .box{
+        width: 180px;
+        height: 260px;
+      }
+      .hover-element .quote .box p{
+        font-size: 9px;
+      }
+      .hover-element .quote .box h2{
+        font-size: 12px;
+      }
+  /*Hover-element*/
+  /*Handel*/
+    .hanmade .container-fluid{
+      margin: 0 ;
+      padding: 0;
+    }
+    .hanmade .container-fluid .row{
+    width: 100%;
+    margin-left: 0;
+    background: #03A9F4;
+    padding-left: 9%;
+    }
+    .hanmade .container-fluid .row .col-2 img{
+      width: 100%;
+      padding: 20px;
+    
+    }
+  /*Handel*/
+  /*Contact*/
+    .contact{
+      width: 100%;
+      height: 60vh;
+      background: #DDDDDD;;
+      padding-top: 2%;
+    }
+    .contact .container-fluid .row{
+      width: 60%;
+      margin: 0 auto;
+    }
+    .contact .container-fluid .row .col-12 h2{
+      padding: 10px;
+      font-size: 20px;
+    }
+    .contact .container-fluid .row .col-12 p{
+      font-size: 11px;
+    }
+    .contact .container-fluid .row .form-control,.btn{
+      font-size: 8px;
+    }
+    .contact .container-fluid .row .btn{
+      font-size: 5px;
+    }
+  /*Contact*/
+
+  /*Contact2*/
+    .contact2{
+      padding-top: 10px;
+    }
+    .contact2 .container h1{
+      font-size: 20px;
+    }
+    .contact2 .col-md-4 .fa{
+      padding: 4px;
+      font-size: 25px;
+    }
+    .contact2 .col-md-4 p{
+      font-size: 12px;
+    }
+    .contact2 .btn{
+      padding: 4px 10px 4px 10px;
+      margin: 1px;
+      border-radius: 20px;
+    }
+    .contact2 .btn .fa{
+      margin-right: 6px;
+    }
+    .footer{
+      background: #000;
+      height: 30px;
+      margin-top: 10px;
+      padding-top: 4px;
+    }
+   /*Contact2*/
+}
+@media screen and (max-width:520px){ 
+  /*header*/
+  .navbar-light .navbar-brand, .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:visited {
+    color: #00CCCC;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  body {
+    font-size: 0.5rem;
+  }
+  .navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .navbar-toggler {
+    padding: 0.2rem .50rem;
+    font-size: 0.2rem;
+    line-height: 0.7;
+}
+  /*header*/
+  /*Banner*/
+    .contentBox div{
+      width: 60%;
+      float: right;
+    }
+    .contentBox div h1{
+      font-size: 12px;
+    }
+    .contentBox div p{
+      font-size: 9px;
+    }
+    .contentBox div .btn{
+      font-size: 7px;
+      padding: 5px;
+    }
+ /*Banner*/
+
+  /*About*/
+    .About {
+      padding: 15px;
+    }
+    .About .headerText {
+      color: #000;
+    }
+    .About .headerText h2 {
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+    }
+    .About .headerText p{
+      font-size: 8px;
+    }
+  /*About*/
+
+  /*Process*/
+    .Process .container-fluid .Project-Completed{
+      height: 13vh;
+      }
+      .Process .container-fluid .Project-Completed .col-3 .wokking .icon i{
+      font-size: 16px;
+      }
+      .Process .container-fluid .Project-Completed .col-3 .wokking .text p{
+        font-size: 7px;
+      }
+  /*Process*/
+  /*More-work*/
+  .More-work .container-fluid .load-more .col-12{
+    height: 10vh;
+  }
+  .More-work .container-fluid .load-more p{
+   font-size: 7px;
+   padding-top: 0;
+  }
+    .More-work .container-fluid .our-work{
+      height: 18vh;
+    }
+    .More-work .container-fluid .our-work .col-6 h3{
+      font-size: 10px;
+      padding-bottom: 0px;
+    }
+    .More-work .container-fluid .our-work .col-6 p{
+      font-size: 6px;
+    }
+    .More-work .container-fluid .image .col-11{ 
+      height: 40vh;
+    }
+    .More-work .container-fluid .image .col-11 .outdio{
+      width: 30px;
+      height: 30px;
+    }
+    .More-work .container-fluid .image .col-11 .outdio i{
+      font-size: 20px;
+    }
+  /*More-work*/
+  /*About me*/
+    .About-me .container-fluid{
+      padding: 20px 0 20px 0;
+    }
+    .About-me .container-fluid .row .col-3 i{
+      font-size: 20px;
+      padding: 8px;
+    }
+    .About-me .container-fluid .row .col-3 h6{
+      font-size: 8px;
+    }
+    .About-me .container-fluid .row .col-3 p{
+      font-size: 6px;
+      color: #777777;
+    }
+  /*About me*/
+  /*Hover-element*/
+      .hover-element{
+        height: 35vh;
+      }
+      .hover-element .quote{
+        width: 420px;
+        margin-top: 100px;
+      }
+      .hover-element .quote .box{
+        width: 120px;
+        height: 200px;
+      }
+      .hover-element .quote .box p{
+        font-size: 6px;
+      }
+      .hover-element .quote .box h2{
+        font-size: 8px;
+      }
+  /*Hover-element*/
+  /*Handel*/
+    .hanmade .container-fluid{
+      margin: 0 ;
+      padding: 0;
+    }
+    .hanmade .container-fluid .row{
+    width: 100%;
+    margin-left: 0;
+    background: #03A9F4;
+    padding-left: 5%;
+    }
+    .hanmade .container-fluid .row .col-2 img{
+      width: 100%;
+      padding: 10px;
+    
+    }
+  /*Handel*/
+  /*Contact*/
+    .contact{
+      width: 100%;
+      height: 40vh;
+      background: #DDDDDD;;
+      padding-top: 0%;
+    }
+    .contact .container-fluid .row{
+      width: 60%;
+      margin: 0 auto;
+    }
+    .contact .container-fluid .row .col-12 h2{
+      padding: 0px;
+      font-size: 16px;
+    }
+    .contact .container-fluid .row .col-12 p{
+      font-size: 9px;
+    }
+    .contact .container-fluid .row .form-control,.btn{
+      font-size: 6px;
+    }
+    .contact .container-fluid .row .btn{
+      font-size: 3px;
+    }
+  /*Contact*/
+
+  /*Contact2*/
+    .contact2{
+      padding-top: 10px;
+    }
+    .contact2 .container h1{
+      font-size: 16px;
+    }
+    .contact2 .container .row{
+      padding: 0;
+    }
+    .contact2 .col-md-4 .fa{
+      padding: 0px;
+      font-size: 20px;
+    }
+    .contact2 .col-md-4 p{
+      font-size: 9px;
+    }
+    .contact2 .btn{
+      padding: 2px 5px 2px 5px;
+      margin: 1px;
+      border-radius: 20px;
+    }
+    .contact2 .btn .fa{
+      margin-right: 4px;
+    }
+    .footer{
+      background: #000;
+      height: 30px;
+      font-size: 20px;
+      margin-top: 8px;
+      padding-top: 3px;
+    }
+   /*Contact2*/
+}
+/*--------reponsive----------*/
